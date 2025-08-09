@@ -13,13 +13,18 @@
 - Member 2: Ashwin Wilson - College of Engineering Adoor
 
 ### Project Description
-Our Project is an useless ai
+Meet Tintumol, the cutest AI avatar who listens, thinks, and talks back… in Malayalam! Powered by Google Gemini and a dash of Pygame magic, she’ll answer your questions, roast you politely, and keep you entertained with her animated charm.
+
+Think Siri, but with more attitude, a Malayalam accent, and better dance moves.
 
 ### The Problem (that doesn't exist)
-Killing Boredome
+The world is facing an alarming shortage of talking cartoon friends who can chat in Malayalam while wiggling on your screen. Millions are forced to rely on boring, static AI assistants that don’t even blink. This tragedy has led to record levels of loneliness, awkward Google searches, and burnt omelettes due to lack of conversational guidance.
+
 
 ### The Solution (that nobody asked for)
-A fun Ai chat avatar
+Introducing Tintumol™—the world’s first (probably) Malayalam-speaking, perpetually dancing AI friend who lives in your computer window. Equipped with advanced chit-chat skills powered by Google Gemini and the unstoppable energy of an animated GIF, Tintumol will listen to your voice, think really hard (or pretend to), and respond in smooth Malayalam tones.
+
+No more boring conversations with faceless bots—Tintumol blinks, bops, and beams while telling you stuff you didn’t ask for but will absolutely treasure. It’s not just AI… it’s emotional AI.
 
 ## Technical Details
 ### Technologies/Components Used
