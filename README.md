@@ -24,15 +24,10 @@ A fun Ai chat avatar
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
+- Languages used Python
+- Frameworks used Pygame
+- Libraries used Pygame ,gen ai
 - [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
 
 ### Implementation
 For Software:
