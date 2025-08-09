@@ -5,6 +5,9 @@ import playsound
 import google.generativeai as genai
 import os
 from PIL import Image
+import requests
+import tempfile
+
 
 # ---------- SETTINGS ----------
 GEMINI_API_KEY = "AIzaSyDPk8JBAJXS3LZr9wiDOXL5utCxwWiQsb8"  # <-- Replace with your key
@@ -44,12 +47,27 @@ def get_ai_response(prompt):
     return response.text.strip()
 
 def speak(text):
-    print(f"🤖 AI: {text}")
-    tts = gTTS(text=text, lang=VOICE_LANG)
-    filename = "voice.mp3"
+    # Convert text to speech with gTTS or your preferred TTS
+    from gtts import gTTS
+    tts = gTTS(text)
+    
+    # Save to a temporary mp3
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as fp:
+        filename = fp.name
     tts.save(filename)
-    playsound.playsound(filename)
+    
+    # Play with pygame
+    pygame.mixer.init()
+    pygame.mixer.music.load(filename)
+    pygame.mixer.music.play()
+    
+    # Wait until done playing
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
+    
+    # Cleanup
     os.remove(filename)
+
 
 def draw_chat(user_text, ai_text):
     screen.fill((255, 255, 255))
