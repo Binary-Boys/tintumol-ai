@@ -13,13 +13,13 @@
 - Member 2: Ashwin Wilson - College of Engineering Adoor
 
 ### Project Description
-[2-3 lines about what your project does]
+Our Project is an useless ai
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Killing Boredome
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+A fun Ai chat avatar
 
 ## Technical Details
 ### Technologies/Components Used
@@ -37,10 +37,10 @@ For Hardware:
 ### Implementation
 For Software:
 # Installation
-[commands]
+pip install -r requirements.txt
 
 # Run
-[commands]
+python temp.py
 
 ### Project Documentation
 For Software:
