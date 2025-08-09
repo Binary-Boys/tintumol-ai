@@ -14,6 +14,8 @@ GEMINI_API_KEY = "AIzaSyDPk8JBAJXS3LZr9wiDOXL5utCxwWiQsb8"  # <-- Replace with y
 AVATAR_IMAGE = "avatar.png"  # Cute female avatar image
 VOICE_LANG = "en"
 pygame.init()
+pygame.display.set_caption("Tintumol")
+
 
 # ---------- INIT GEMINI ----------
 genai.configure(api_key=GEMINI_API_KEY)
@@ -22,7 +24,10 @@ model = genai.GenerativeModel("models/gemini-1.5-flash")  # or gemini-1.5-pro
 # ---------- PYGAME WINDOW ----------
 WIDTH, HEIGHT = 500, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Cute AI Avatar Chat")
+pygame.display.set_caption("Tintumols")
+font = pygame.font.SysFont("Arial", 36, bold=True)
+text_surface = font.render("Tintumol", True, (255, 0, 0))
+screen.blit(text_surface, (20, 20))
 
 # Load avatar image
 avatar_img = pygame.image.load(AVATAR_IMAGE)
@@ -43,7 +48,7 @@ def listen():
 
 def get_ai_response(prompt):
     print("🤖 Thinking...")
-    prompt = "Answer the following in Malayalam, and make sure the response is dumb and funny:" + prompt
+    prompt = "Answer the following in Malayalam, and make sure the response is dumb and funny. " + prompt
     response = model.generate_content(prompt)
     return response.text.strip()
 
