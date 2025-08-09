@@ -19,12 +19,12 @@ pygame.display.set_caption("Tintumol")
 
 # ---------- INIT GEMINI ----------
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("models/gemini-1.5-flash")  # or gemini-1.5-pro
+model = genai.GenerativeModel("models/gemini-2.5-flash")  # or gemini-1.5-pro
 
 # ---------- PYGAME WINDOW ----------
 WIDTH, HEIGHT = 500, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Tintumols")
+pygame.display.set_caption("Tintumol")
 font = pygame.font.SysFont("Arial", 36, bold=True)
 text_surface = font.render("Tintumol", True, (255, 0, 0))
 screen.blit(text_surface, (20, 20))
@@ -48,8 +48,9 @@ def listen():
 
 def get_ai_response(prompt):
     print("🤖 Thinking...")
-    prompt = "Answer the following in Malayalam, and make sure the response is dumb and funny. " + prompt
+    prompt = "Answer the promnt in malayalam no need of english translation. make sure the response  medium length and is dumb and super funny. Only give human reponse no other explanations sometimes add some funny sarcasim" + prompt
     response = model.generate_content(prompt)
+    print(response)
     return response.text.strip()
 
 def speak(text):
