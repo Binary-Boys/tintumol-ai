@@ -26,7 +26,7 @@ A fun Ai chat avatar
 For Software:
 - Languages used Python
 - Frameworks used Pygame
-- Libraries used Pygame ,gen ai
+- Libraries used Pygame ,gen ai, gTTs, speech_recognition, PIL
 - [Tools used]
 
 ### Implementation
