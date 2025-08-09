@@ -46,9 +46,9 @@ def listen():
     except:
         return None
 
-def get_ai_response(prompt):
-    print("🤖 Thinking...")
-    prompt = "Answer the promnt in malayalam no need of english translation. make sure the response  medium length and is dumb and super funny. Only give human reponse no other explanations sometimes add some funny sarcasim" + prompt
+def get_ai_response(prompt): 
+    print("🤖 Thinking...") 
+    prompt = "Reply to the promnt in malayalam no need of english translation. make sure the response  medium length and is dumb and super funny. Only give human reponse no other explanations sometimes add some funny sarcasim" + prompt
     response = model.generate_content(prompt)
     print(response)
     return response.text.strip()
