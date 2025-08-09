@@ -43,15 +43,15 @@ def listen():
 
 def get_ai_response(prompt):
     print("🤖 Thinking...")
+    prompt = "Answer the following in Malayalam, and make sure the response is dumb and funny:" + prompt
     response = model.generate_content(prompt)
     return response.text.strip()
 
 def speak(text):
-    # Convert text to speech with gTTS or your preferred TTS
-    from gtts import gTTS
-    tts = gTTS(text)
+    # Generate Malayalam speech
+    tts = gTTS(text, lang="ml")
     
-    # Save to a temporary mp3
+    # Save to temporary file
     with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as fp:
         filename = fp.name
     tts.save(filename)
@@ -67,6 +67,7 @@ def speak(text):
     
     # Cleanup
     os.remove(filename)
+
 
 
 def draw_chat(user_text, ai_text):
