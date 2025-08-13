@@ -60,8 +60,7 @@ python3 temp.py
 
 ### Project Demo
 # Video
-[Tnitumol ai demo video](https://odysee.com/@Cozmo:d/tintumol-ai-demo:7)
-*Here we shows how tintumol ai works*
+[Tnitumol ai demo video](https://odysee.com/@Cozmo:d/tintumol-ai-demo:7)  <-- Here we shows how tintumol ai works
 
 
 ---
